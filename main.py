@@ -4,8 +4,9 @@ from tkinter import messagebox
 
 from gtts import gTTS
 from playsound import playsound
-from translate import MyTranslate
+
 from pdf_to_txt import PDFToText
+from translate import MyTranslate
 
 root = Tk()
 root.geometry("1250x600")
@@ -65,7 +66,6 @@ def exit_handler():
 def reset():
     lang.set("")
     message_entry_field.delete("1.0", END)
-
 
 
 speak_button = PhotoImage(file="assets/Images/speak-man.png")

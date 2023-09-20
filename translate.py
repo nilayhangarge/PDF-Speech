@@ -1,5 +1,6 @@
-import requests
 import uuid
+
+import requests
 
 # Add your key and endpoint
 key = "e080665c75bc4281819fa6c7b56330e9"
@@ -34,5 +35,3 @@ class MyTranslate:
         request = requests.post(self.constructed_url, params=self.params, headers=self.headers, json=self.body)
         response = request.json()
         return response[0]["translations"][0]["text"]
-
-

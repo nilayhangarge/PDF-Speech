@@ -1,4 +1,5 @@
 from tkinter import filedialog
+
 import PyPDF2
 
 
@@ -10,9 +11,8 @@ class PDFToText:
                                  'rb')
 
     def translate_pdf(self):
-        pdfreader = PyPDF2.PdfFileReader(self.pdf_file_obj)
-        x = pdfreader.numPages
-        page_obj = pdfreader.getPage(x - 1)
-        text = page_obj.extractText()
+        pdfreader = PyPDF2.PdfReader(self.pdf_file_obj)
+        x = len(pdfreader.pages)
+        page_obj = pdfreader.pages[x - 1]
+        text = page_obj.extract_text()
         return text
-
