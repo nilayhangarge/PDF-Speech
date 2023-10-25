@@ -3,13 +3,14 @@ import uuid
 import requests
 
 # Add your key and endpoint
-key = "e080665c75bc4281819fa6c7b56330e9"
+# key = "e080665c75bc4281819fa6c7b56330e9"
+key = "455d17e4df114a2eb481ecdd42add740"
 endpoint = "https://api.cognitive.microsofttranslator.com"
 
 
 class MyTranslate:
     def __init__(self, text_input, translate_to_language):
-        self.location = "centralindia"
+        self.location = "australiaeast"
         self.path = '/translate'
         self.constructed_url = endpoint + self.path
         self.params = {

@@ -19,12 +19,12 @@ Label(root, text="TEXT/PDF TO SPEECH", font="arial 20 bold", fg='black', bg='#ff
 Msg = StringVar()
 lang = StringVar()
 
-label1 = Label(root, text="Enter Text", font='arial 15 bold', fg='black', bg='#fff').place(x=220, y=160)
+Label(root, text="Enter Text", font='arial 15 bold', fg='black', bg='#fff').place(x=220, y=160)
 message_entry_field = Text(root, width=50, font="Robote 20", wrap=WORD)
 message_entry_field.place(x=220, y=200, width=350, height=300)
 
-label2 = Label(root, text="Enter Language (Hindi='hi', Marathi='mr')", font='arial 15 bold', fg='black',
-               bg='#fff').place(x=600, y=160)
+Label(root, text="Enter Language (Hindi='hi', Marathi='mr')", font='arial 15 bold', fg='black',
+      bg='#fff').place(x=600, y=160)
 lang_entry_field = Entry(root, textvariable=lang, width=50, font="Robote 20")
 lang_entry_field.place(x=600, y=200, width=350, height=40)
 
